@@ -1,0 +1,94 @@
+Created blank solution
+
+Created web apis ECommerce.Api.Customers, .Products, .Orders, .Search
+
+Add package to Products dependencies Microsoft.EntityFrameWorkCore & .InMemory
+Add AutoMapper.Extensions.Microsoft.DependencyInjection version 12
+
+Rebuild solution
+
+Add Db folder to Api.Products root
+Create ProductsDbContext.cs    : DbContext
+Add Product.cs
+public int Id { get; set; }
+public string Name { get; set; }
+public decimal Price { get; set; }
+public int Inventory { get; set; }
+
+
+In ProductsDbContext Add:
+public DbSet<Product> Products { get; set; }
+//Ctor
+public ProductsDbContext(DbContextOptions options) : base(options) {}
+
+
+
+inside startup::ConfigureServices
+services.AddDbContext<ProductsDbContext>(options => {
+                options.UseInMemoryDatabase("Products");
+            });
+
+In Products root add "Models" folder and add Product.cs
+Copy all the same stuff deom Db Product.cs
+
+------------
+
+Add Interfaces folder and add IProductsProvider.cs
+inside : Task<(bool IsSuccess, IEnumerable<Models.Product> Products, string ErrorMessage)> GetProductsAsync(); //Tuple
+
+-----------
+
+Create Providers folder and ProductsProvider inside the folder
+Implement interface IProductsProvider
+Add Constructor for Dependency Injection
+
+public ProductsProvider(ProductsDbContext dbContext, ILogger<ProductsProvider> logger, IMapper mapper)
+{
+    _dbContext = dbContext;
+    _logger = logger;
+    _mapper = mapper;
+
+    SeedData();
+}
+
+Create SeedData()
+    if (!_dbContext.Products.Any())
+    {
+        _dbContext.Products.Add(new Db.Product() { Id = 1 , Name="Keyboard", Price=20,Inventory=100});
+        _dbContext.Products.Add(new Db.Product() { Id = 2 , Name="Mouse", Price=20,Inventory=100});
+        _dbContext.Products.Add(new Db.Product() { Id = 3 , Name="Monitor", Price=100,Inventory=100});
+        _dbContext.Products.Add(new Db.Product() { Id = 4 , Name="CPU", Price=200,Inventory=100});
+
+        _dbContext.SaveChanges();
+    }
+
+
+---------------
+
+Create Profiles folder
+add ProductProfile.cs
+add this inside:
+//map product model to product entity (DB)
+
+    public ProductProfile()
+    {
+        CreateMap<Db.Product, Models.Product>();
+    }
+
+
+Now we need to inject from startup by adding a Service
+this is sending the instance to the constructor so there is only 1 reference
+
+in Startup::ConfigureServices
+services.AddScoped<IProductsProvider, ProductsProvider>();
+services.AddAutoMapper(typeof(Startup));
+
+
+
+//obtaining all the products in the products microservice
+
+//Add Product controller with httpget = all
+httpget("{id}") for one single
+
+Modify Interface
+Modify implementation of interface
