@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rfy1+lZ0bkwtQUXcVlmG/OY2gu9A75TlrBENRQRP6WPyWcf8YgSiKxXaSCOh0p+89VReMtagkvt3692FKLqzcQ==",
+  "dgSpecHash": "/IhJNNFfWMvJU89pDVbN1ZQaM25kWHtgndgUQQ7DWEq2IikYArzA5SHJgkgmNal0NFgrto7XDEnfgI30zmJcBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\samue\\source\\repos\\ECommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
+  "projectFilePath": "C:\\Users\\samue\\GitProjects\\ecommerceLinkedInLearning\\ECommerce\\ECommerce.Api.Customers\\ECommerce.Api.Customers.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samue\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -24,6 +24,7 @@
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.31\\microsoft.extensions.logging.abstractions.3.1.31.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",

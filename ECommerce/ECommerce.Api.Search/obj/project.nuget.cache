@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9UVZ9dffZVtpjPKqRMWmP2Vfcwvmp+3d95Iw6OlhvIJ2JnsPjBibW/o74PO6HtsUFuz2JYSxPVso8SyfRuZgRA==",
+  "dgSpecHash": "iSQKrWMwxjCmYq/omPx+Uh/bL9jsgI6XPISxgdC3S+nKMPhBW4KuHTOCa4Yx1mzHYc3CMKzSfdrr7AmMUBfaxA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\samue\\source\\repos\\ECommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
+  "projectFilePath": "C:\\Users\\samue\\GitProjects\\ecommerceLinkedInLearning\\ECommerce\\ECommerce.Api.Search\\ECommerce.Api.Search.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\samue\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
@@ -26,6 +26,7 @@
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.31\\microsoft.extensions.logging.abstractions.3.1.31.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\samue\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\polly\\7.1.0\\polly.7.1.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\Users\\samue\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
